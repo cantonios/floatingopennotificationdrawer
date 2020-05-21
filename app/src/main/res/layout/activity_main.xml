@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.panthera.floatingopennotificationdrawer.MainActivity"
+    android:layout_margin="10dp">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Here To Show Floating Widget"
+        android:id="@+id/buttonShow"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonShow"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/alphaLabel"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="alpha" />
+
+        <SeekBar
+            android:id="@+id/alphaSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            />
+
+        <TextView
+            android:id="@+id/alphaValue"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:text="128"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
